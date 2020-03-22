@@ -141,7 +141,30 @@ body {
     .side-box.chat-room .chat-minimize img {
       width: 16px; }
   .side-box.chat-room .chat-msgs {
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    .side-box.chat-room .chat-msgs .talks {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 350px;
+      padding: 1rem 1rem 76px 1rem; }
+      .side-box.chat-room .chat-msgs .talks .talk {
+        background: #fff;
+        padding: .7rem;
+        font-size: .9rem;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 15px 15px 15px 0;
+        margin-bottom: 1rem; }
+        .side-box.chat-room .chat-msgs .talks .talk .sender-name {
+          font-style: bold; }
+        .side-box.chat-room .chat-msgs .talks .talk p {
+          margin-top: .3rem; }
+        .side-box.chat-room .chat-msgs .talks .talk.owner {
+          background: #dbf1db;
+          border-radius: 15px 15px 0px 15px; }
     .side-box.chat-room .chat-msgs .chat-form {
       position: relative;
       height: 100%; }
