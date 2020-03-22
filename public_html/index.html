@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="video-frame">
+        <div id="video-frame" class="video-frame">
             <div class="btn-group">
                 <button class="btn-circle btn-sm" title="Desativar áudio">
                     <img src="img/microphone.svg" />
@@ -19,9 +19,24 @@
                     <img src="img/film.svg" />
                 </button>
             </div>
+            <div class="video-thumb">
+                <span>Você</span>
+                <!-- Miniatura aqui -->
+            </div>
         </div> 
         <div class="side-box chat-room">
-            <button type="button" class="chat-minimize">a</button>
+            <button type="button" class="chat-minimize" onClick="toogleChat()">
+                <img src="img/next.svg" />
+            </button>
+            <div class="safe-badge">
+
+            </div>
+            <div class="chat-msgs">
+                <form class="chat-form">
+                    <textarea onkeyup="textboxAdjust(this)" placeholder="Digite uma mensagem ..."></textarea>
+                </form>
+            </div>
         </div>
+        <script src="js/iteractions.js"></script>
     </body>
 </html>

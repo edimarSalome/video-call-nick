@@ -1,5 +1,6 @@
 .side-box.chat-room{
     padding: 0px;
+    background:#F3F3F3;
 
     .chat-minimize{
         position: absolute;
@@ -9,6 +10,34 @@
         margin-left: -23px;
         top: 50%;
         margin-top: -70px;
+        cursor: pointer;
+
+        img{width: 16px;}
+    }
+
+    .chat-msgs{
+        height: 100%;
+        
+        .chat-form{
+            position: relative;
+            height: 100%;
+    
+            textarea{
+                font-family: 'Open sans', sans-serif;
+                font-size: .9rem;
+                width: 100%;
+                max-width: 350px;
+                padding: .5rem;            
+                border: none;
+                border-top:1px solid #ddd;
+                overflow: hidden;
+                resize: none;
+    
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
     }
 
 }

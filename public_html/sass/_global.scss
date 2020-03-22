@@ -24,6 +24,18 @@ body{
     &.full-width{
         flex: 0 0 auto;
     }
+
+    .video-thumb{
+        width: 150px;
+        height: 150px;
+        border: 3px solid #fff;
+        color: #fff;
+        padding: 3px 5px;
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        font-size: .8rem;
+    }
 }
 
 .side-box{
