@@ -1,0 +1,130 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open sans', sans-serif;
+  font-size: 16px;
+  display: flex;
+  overflow: hidden; }
+  body * {
+    box-sizing: border-box; }
+  body a {
+    color: #579BF3; }
+  body button {
+    border: none;
+    outline: none; }
+
+.video-frame {
+  background: #3E3E3E;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  flex: 0 1 auto;
+  transition: ease flex-shrink .5s; }
+  .video-frame.full-width {
+    flex: 0 0 auto; }
+
+.side-box {
+  background: #fff;
+  display: block;
+  padding: 3rem;
+  min-width: 350px; }
+  .side-box.closed {
+    width: 0px;
+    overflow: hidden; }
+
+.link-group {
+  display: flex; }
+
+.login-form {
+  width: 100%;
+  margin-top: 4rem; }
+  .login-form .btn-primary {
+    margin-top: 1rem; }
+
+.form-group {
+  margin-bottom: 1rem; }
+  .form-group label {
+    width: 100%;
+    display: block;
+    font-size: .8rem; }
+  .form-group input {
+    padding: .7rem;
+    font-size: 1rem;
+    font-family: 'Open sans', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%; }
+
+.btn-group {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem; }
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding: 0px;
+  border: none;
+  background: #fff;
+  box-shadow: 3px 3px 6px #666;
+  margin: 8px;
+  outline: none; }
+  .btn-circle img {
+    height: 30px;
+    max-width: 30px; }
+  .btn-circle.btn-sm {
+    width: 50px;
+    height: 50px; }
+    .btn-circle.btn-sm img {
+      height: 22px;
+      max-width: 22px; }
+  .btn-circle:active {
+    background: #ccc; }
+  .btn-circle.power-on {
+    background: #00AB06; }
+    .btn-circle.power-on:active {
+      background: #108E15; }
+  .btn-circle.power-off {
+    background: #FF4D4D; }
+    .btn-circle.power-off:active {
+      background: #C22929; }
+
+.btn-primary, .btn-link {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ff991f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: .98rem; }
+  .btn-primary:active, .btn-link:active {
+    background: #da831a; }
+
+.btn-link {
+  background: transparent;
+  color: #579BF3; }
+  .btn-link:active {
+    background: #ccc; }
+
+.link-sala {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  display: block; }
+
+.side-box.chat-room {
+  padding: 0px; }
+  .side-box.chat-room .chat-minimize {
+    position: absolute;
+    padding: .5rem;
+    height: 70px;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: -23px;
+    top: 50%;
+    margin-top: -70px; }
+
+/*# sourceMappingURL=style.css.map */

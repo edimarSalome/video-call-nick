@@ -1,0 +1,14 @@
+.side-box.chat-room{
+    padding: 0px;
+
+    .chat-minimize{
+        position: absolute;
+        padding: .5rem;
+        height: 70px;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: -23px;
+        top: 50%;
+        margin-top: -70px;
+    }
+
+}
